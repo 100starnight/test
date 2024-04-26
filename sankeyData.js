@@ -8,57 +8,63 @@ const white = '#ffffff';
 
 function buildData() {
     const data = [
-        //`Cardinal,Vote 1,Vote 2,Vote 3,Vote 4,Vote 5`,
-        `Borgia,Borgia,Borgia,Borgia,Borgia,Borgia`,
-        `Carafa,Carafa,Borgia,Borgia,Borgia,Borgia`,
-        `Colonna,Colonna,Colonna,Sforza,n/a,Borgia`,
-        `Della Rovere,Della Rovere,Della Rovere,Della Rovere,Della Rovere,Della Rovere`,
-        `Gentili,Sforza,Sforza,Della Rovere,Della Rovere,Della Rovere`,
-        `Orsini,Conti,Conti,Sforza,Borgia,Borgia`,
-        `Piccolomini,Piccolomini,Piccolomini,Sforza,Sforza,Borgia`,
-        `Nanni,Della Rovere,Della Rovere,Della Rovere,Della Rovere,Della Rovere`,
-        `Sforza,Sforza,Sforza,Sforza,Sforza,Borgia`,
-        `Torriani,n/a,Borgia,Sforza,Borgia,Borgia`,
-        `Basso Della Rovere,Della Rovere,Della Rovere,Della Rovere,Della Rovere,Della Rovere`,
-        `Briconnet,De Prie,De Prie,Della Rovere,Della Rovere,n/a`,
-        `De Bucy,De Prie,De Prie,Della Rovere,Della Rovere,Della Rovere`,
-        `D'Aubusson,De Prie,De Prie,Nanni,Della Rovere,Della Rovere`,
-        `Conti,Carafa,Sforza,Sforza,Borgia,Borgia`,
-        `Da Costa,Della Rovere,Colonna,Della Rovere,Sforza,Borgia`,
-        `Patriarch,Orsini,Conti,Sforza,Sforza,Borgia`,
-        `Della Porta Junior,Piccolomini,Piccolomini,Sforza,n/a,Borgia`,
-        `De Prie,Della Rovere,Della Rovere,Della Rovere,Della Rovere,Della Rovere`,
-        `Battista Zen,Orsini,Orsini,Borgia,Sforza,Borgia`,
-        `Michiel Zen,Carafa,Piccolomini,Borgia,Sforza,Borgia`,
-        `Savelli,Colonna,Colonna,Sforza,Sforza,Borgia`,
-        `Soderini,Piccolomini,Piccolomini,Sforza,Sforza,Borgia`,
-        `Bembo,Della Rovere,Della Rovere,Sforza,Borgia,Borgia`,
-        `D'Este,Sforza,Sforza,Sforza,Borgia,Borgia`,
-        `Medici,Conti,Conti,Sforza,n/a,Borgia`,
-        `Riario,Della Rovere,Della Rovere,Della Rovere,Borgia,Della Rovere`,
-        `Hadrian,Orsini,Colonna,Sforza,Sforza,Borgia`,
-        `Schiner,Schiner,Schiner,Della Rovere,Borgia,Borgia`,
-        `Farnese,,,Borgia,Borgia,Borgia`,
-        `C. Borgia,,,Borgia,Borgia,Borgia`,
-
+        //`Cardinal,Vote 1,Vote 2,Vote 3,Vote 4,Vote 5,Vote 5.5,Vote 6`
+        `D'Aubusson,Della Rovere,Briconnet,Della Rovere,Della Rovere,Piccolomini,Della Rovere,Borgia`,
+        `Bembo,Della Rovere,Della Rovere,Piccolomini,Borgia,Sforza,Sforza,Borgia`,
+        `Borgia,Borgia,Borgia,Borgia,Borgia,Borgia,Borgia,Borgia`,
+        `Briconnet,Della Rovere,Della Rovere,Della Rovere,Della Rovere,Sforza,Della Rovere,Della Rovere`,
+        `De Bucy,Della Rovere,Nanni,Della Rovere,Della Rovere,Della Rovere,Della Rovere,Della Rovere`,
+        `Campofregoso,Sforza,Sforza,Sforza,Sforza,Sforza,Sforza,Borgia`,
+        `Carafa,Borgia,Borgia,Borgia,Borgia,Borgia,Borgia,Borgia`,
+        `Castellesi,Sforza,Sforza,Borgia,Sforza,Borgia,Sforza,Borgia`,
+        `Colonna,Colonna,Colonna,Colonna,Colonna,Sforza,Sforza,Sforza`,
+        `Conti,Borgia,Orsini,Borgia,Sforza,Borgia,Sforza,Borgia`,
+        `Da Costa,D'Aubusson,Della Porta,Da Costa,Borgia,Borgia,Sforza,Sforza`,
+        `D'Este,Sforza,Sforza,Borgia,Borgia,Sforza,Sforza,Borgia`,
+        `Gentili,Sforza,Sforza,Della Rovere,Della Rovere,Sforza,Sforza,Sforza`,
+        `Patriarch,Orsini,Orsini,Patriarch,Borgia,Sforza,Sforza,Borgia`,
+        `Medici,Orsini,Piccolomini,Borgia,Borgia,Patriarch,Patriarch,Patriarch`,
+        `Nanni,Della Rovere,Della Rovere,Della Rovere,Della Rovere,Della Rovere,Borgia,Borgia`,
+        `Orsini,Orsini,Orsini,Borgia,Borgia,Orsini,Borgia,Borgia`,
+        `Piccolomini,Nanni,Piccolomini,Carafa,Carafa,Sforza,Sforza,Sforza`,
+        `Della Porta,Nanni,Piccolomini,Piccolomini,Piccolomini,Sforza,Sforza,Borgia`,
+        `De Prie,Nanni,Della Rovere,Della Rovere,Della Rovere,Della Rovere,Della Rovere,Della Rovere`,
+        `Riario,Della Rovere,Della Rovere,Della Rovere,Della Rovere,Borgia,Della Rovere,Della Rovere`,
+        `Della Rovere,Della Rovere,Della Rovere,Della Rovere,Della Rovere,Della Rovere,Della Rovere,Della Rovere`,
+        `Basso,Della Rovere,Della Rovere,Della Rovere,Della Rovere,Della Rovere,Della Rovere,Della Rovere`,
+        `Domenico,Della Rovere,Della Rovere,Della Rovere,Della Rovere,Della Rovere,Medici,Medici`,
+        `Achilles,Sforza,Sforza,Sforza,Sforza,Sforza,Borgia,Borgia`,
+        `Sanseverino,Sanseverino,Sanseverino,Piccolomini,Sforza,Sforza,Sforza,Sforza`,
+        `Savelli,Colonna,Colonna,Colonna,Colonna,Borgia,Borgia,Borgia`,
+        `Schiner,Della Rovere,Colonna,Colonna,Borgia,Borgia,Borgia,Borgia`,
+        `Soderini,Sforza,Nanni,Sforza,Sforza,Sforza,Sforza,Sforza`,
+        `Sforza,Sforza,Sforza,Sforza,Sforza,Sforza,Sforza,Sforza`,
+        `Torriani,Borgia,Borgia,Borgia,Borgia,Borgia,Sforza,Borgia`,
+        `B. Zen,Patriarch,Patriarch,Patriarch,Della Rovere,Sforza,Medici,Medici`,
+        `M. Zen,Patriarch,Patriarch,Patriarch,Patriarch,Sforza,Sforza,Sforza`,
+        `C. Borgia,,,Borgia,Borgia,Borgia,Medici,Borgia`,
+        `Farnese,,,,,Borgia,Borgia,Borgia`,
     ];
 
     // reformat data into list of "vote links" each containing [ from, to, count ] data
     let voteLinks = [];
     data.forEach(cardinal => {
-        let [name, v1, v2, v3, v4, v5] = cardinal.split(',');
+        let [_name, v1, v2, v3, v4, v5, v5b, v6] = cardinal.split(',');
 
         // NOTE: Sankey library does not support haivng muiltple nodes with the same title, so
         // spaces are added to differentiate between nodes in different voting rounds
         //      Vote 1: Name
-        //      Vote 2: _Name
-        //      Vote 3: __Name
-        //      Vote 4: Name_
-        //      Vote 4: Name__
-        v2 = v2 ? ` ${v2}` : undefined;
-        v3 = v3 ? `  ${v3}`: undefined;
-        v4 = v4 ? `${v4} ` : undefined;
-        v5 = v5 ? `${v5}  ` : undefined;
+        //      Vote 2: Name_
+        //      Vote 3: Name__
+        //      Vote 4: Name___
+        //      Vote 5: Name____
+        //      Vote 6: Name_____
+        v2 = v2 ? `${v2} ` : undefined;
+        v3 = v3 ? `${v3}  `: undefined;
+        v4 = v4 ? `${v4}   ` : undefined;
+        v5 = v5 ? `${v5}    ` : undefined;
+        v5b = v5b ? `${v5b}     ` : undefined;
+        v6 = v6 ? `${v6}      ` : undefined;
 
         function addVoteLink(from, to) {
             if (from && to) {
@@ -77,6 +83,8 @@ function buildData() {
         addVoteLink(v2, v3);
         addVoteLink(v3, v4);
         addVoteLink(v4, v5);
+        addVoteLink(v5, v5b);
+        addVoteLink(v5b, v6);
     });
     
     return voteLinks;
@@ -89,53 +97,37 @@ function drawChart() {
     data.addColumn('string', 'To');
     data.addColumn('number', 'Votes');
 
-    // add a bunch of vote links with count 0 to control order of nodes
-    const alphabatize = [
-        [ 'Borgia', ' Borgia', 0 ], // 0,1
-        [ 'Carafa', ' Borgia', 0 ], // 2,1
-        [ 'Colonna', ' Colonna', 0 ], // 3,4
-        [ 'Conti', ' Conti', 0 ], // 5,6
-        [ 'De Prie', ' De Prie', 0 ], // 7,8
-        [ 'Della Rovere', ' Della Rovere', 0 ], // 9,10
-        [ 'Orsini', ' Orsini', 0 ], // 11, 12
-        [ 'Piccolomini', ' Piccolomini', 0 ], // 13,14
-        [ 'Schiner', ' Schiner', 0 ], // 15,16
-        [ 'Sforza', ' Sforza', 0 ], // 17,18
-        [ 'n/a', ' Borgia', 0 ], // 19,1
-        [ '  Borgia', 'Borgia ', 0 ], // 20,21
-        [ '  Della Rovere', 'Della Rovere ', 0 ], // 22,23
-        [ '  Nanni', 'Sforza ', 0 ], // 24,25
-        [ '  Sforza', 'n/a ', 0 ], // 26,27
-        [ 'Borgia ', 'Borgia  ', 0 ], // 20,28
-        [ 'Borgia ', 'Della Rovere  ', 0 ], // 20,29
-        [ 'Borgia ', 'n/a  ', 0 ], // 20,30
-    ];
-    let rows = [...alphabatize, ...buildData()];
+    const rows = buildData();
     data.addRows(rows);
 
-    // setup the colors
-    let nodeColors = Array(31).fill(gray);
-    const colorNodes = [
-        // color Borgia nodes red
-        { row: 0, color: red },
-        { row: 1, color: red },
-        { row: 20, color: red },
-        { row: 21, color: red },
-        { row: 28, color: red },
-        // color Della Rovere nodes blue
-        { row: 9, color: blue },
-        { row: 10, color: blue },
-        { row: 22, color: blue },
-        { row: 23, color: blue },
-        { row: 29, color: blue },
-        // color Sforza nodes yellow
-        { row: 17, color: yellow },
-        { row: 18, color: yellow },
-        { row: 25, color: yellow },
-        { row: 26, color: yellow },
-    ];
-    colorNodes.forEach(item=> {
-        nodeColors[item.row] = item.color;
+    // Sankey library doesn't expose nodes, so create them
+    const nodes = [];
+    rows.forEach((link) => {
+        if (!nodes.includes(link[0])) {
+            nodes.push(link[0]);
+        }
+        if (!nodes.includes(link[1])) {
+            nodes.push(link[1]);
+        }
+    });
+    // match nodes to appropriate colors
+    let nodeColors = Array(nodes.length);
+    nodes.forEach((node, index) => {
+        let color = gray;
+        const name = node.trim();
+        // color the Borgia nodes red
+        if (name === 'Borgia') {
+            color = red;
+        }
+        // color the Della Rovere nodes blue
+        if (name === 'Della Rovere') {
+            color = blue;
+        }
+        // color the Sforza nodes yellow
+        if (name === 'Sforza') {
+            color = yellow;
+        }
+        nodeColors[index] = color;
     });
 
     // Set chart options
@@ -154,7 +146,6 @@ function drawChart() {
 
     // Instantiate and draw our chart, passing in some options.
     var chart = new google.visualization.Sankey(document.getElementById('sankey_multiple'));
-    console.log(chart.Sankey);
     chart.draw(data, options);
 }
 
